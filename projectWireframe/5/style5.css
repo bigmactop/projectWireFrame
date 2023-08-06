@@ -1,0 +1,95 @@
+html {
+  background-color: #fff;
+}
+body {
+  margin: auto;
+  background-color: #eef2f7;
+  height: 600px;
+  width: 700px;
+  border: #7e7f81;
+  font-family: "Domine", serif;
+  border-radius: 13px;
+}
+h1 {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  color: #25094e;
+}
+form {
+  text-align: center;
+}
+button {
+  background-color: #7dabce;
+}
+.Bremen {
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: #3a4e5e;
+}
+strong {
+  opacity: 0.4;
+}
+.hrUp {
+  margin: 10px 10px;
+}
+.down {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border-right: 1px solid #9a9a9a;
+  min-height: 400px;
+  max-width: fit-content;
+  margin: 20px 40px 20px 20px;
+  padding-right: 40px;
+  text-align: center;
+}
+.firstDay {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+.divBerlin {
+  color: #25094e;
+  font-weight: bold;
+}
+.right {
+  display: flex;
+  width: 600px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 30px 0;
+}
+
+.otherDays {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 1px solid #9a9a9a;
+  text-align: center;
+  padding-left: 40px;
+}
+
+.fhg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: black;
+}
+.qwer {
+  size: 30px;
+}
+.asdf {
+  width: 105px;
+  margin: auto;
+}
+a:hover {
+  font-weight: bold;
+}

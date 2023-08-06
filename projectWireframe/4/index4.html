@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style4.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="big">
+      <div class="up">
+        <h1>Weather Template</h1>
+        <input type="text" id="page-input" />
+        <button id="page-button">Перейти</button>
+      </div>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TRSWQN9"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+      <hr class="hrUp" />
+      <br />
+      <div class="down">
+        <div class="left">
+          <p class="Berlin"><a href="/1/index1.html">Berlin</a></p>
+          <p class="Dortmund"><a href="/2/index2.html">Dortmund</a></p>
+          <p class="Köln"><a href="/3/index3.html">Köln</a></p>
+          <p class="Hamburg"><a href="/4/index4.html">Hamburg</a></p>
+          <p class="Bremen"><a href="/5/index5.html">Bremen</a></p>
+        </div>
+        <div class="right">
+          <div class="firstDay">
+            <div class="divBerlin">HAMBURG</div>
+            <hr />
+            <div class="fhg">
+              <div class="qwer">☀️</div>
+              <div class="asdf">
+                Sunday<br />
+                <strong>+13 °C</strong><br />
+                Clear
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div class="otherDays">
+            <div class="otherDays1">
+              <div class="fhg">
+                <div class="qwer">🌤️</div>
+                <div class="asdf">
+                  Monday<br />
+                  <strong>+18 °C</strong><br />
+                  Cloudy
+                </div>
+              </div>
+            </div>
+            <div class="otherDays2">
+              <div class="fhg">
+                <div class="qwer">🌧️</div>
+                <div class="asdf">
+                  Tuesday<br />
+                  <strong>+11 °C</strong><br />
+                  Rains
+                </div>
+              </div>
+            </div>
+            <div class="otherDays3">
+              <div class="fhg">
+                <div class="qwer">🌧️</div>
+                <div class="asdf">
+                  Wednesday<br />
+                  <strong>+9 °C</strong><br />
+                  Rains
+                </div>
+              </div>
+            </div>
+            <div class="otherDays4">
+              <div class="fhg">
+                <div class="qwer">🌧️</div>
+                <div class="asdf">
+                  Thursday<br />
+                  <strong>+12 °C</strong><br />
+                  Rains
+                </div>
+              </div>
+            </div>
+            <div class="otherDays5">
+              <div class="fhg">
+                <div class="qwer">🌧️</div>
+                <div class="asdf">
+                  Friday<br />
+                  <strong>+13 °C</strong><br />
+                  Showers in places
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Находим кнопку и поле ввода на странице
+      const myButton = document.querySelector("button");
+      const myInput = document.querySelector("input");
+
+      // Добавляем обработчик события "click"
+      myButton.addEventListener("click", function () {
+        // Получаем значение из поля ввода
+        const inputValue = myInput.value;
+
+        // Переходим на соответствующую страницу
+        if (inputValue === "Berlin") {
+          window.location.href = "/1/index1.html";
+        } else if (inputValue === "Dortmund") {
+          window.location.href = "/2/index2.html";
+        } else if (inputValue === "Köln") {
+          window.location.href = "/3/index3.html";
+        } else if (inputValue === "Hamburg") {
+          window.location.href = "/4/index4.html";
+        } else if (inputValue === "Bremen") {
+          window.location.href = "/5/index5.html";
+        } else {
+          alert("Invalid input! Please enter a valid page name.");
+        }
+      });
+    </script>
+  </body>
+</html>
